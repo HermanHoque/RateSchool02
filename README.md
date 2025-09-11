@@ -12,5 +12,7 @@ e segue os passos no terminal dentro do diretório do projeto:
 3- instale as bibliotecas no arquivo requirements.txt usando o seguinte comando no diretório do projeto: 
 " pip install -r requirements.txt " 
 
+4- renomeia o aquivo ".env.example" para ".env"
+
 
 ***APP feita com Python+Flask***
