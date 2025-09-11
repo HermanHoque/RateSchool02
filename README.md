@@ -1,6 +1,6 @@
 # RateSchool
 
-Sistema para avalição geral e personalida para instituições escolares
+Sistema para avalição geral e personalizada para instituições escolares
 
 Para rodar o projeto instale o python caso não tenha
 e depois instale as bibliotecas no arquivo requirements.txt
