@@ -16,9 +16,14 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
+    # Importa models (para o Flask-Migrate detectar)
+    from . import models
+
     # Importa e registra rotas
-    from .routes.ola_mundo import ola
-    app.register_blueprint(ola)
+    from . import routes
+    for bp in routes.bp:
+        app.register_blueprint(bp)
+    
 
     return app
 
@@ -30,6 +35,6 @@ def get_connection():
         host="127.0.0.1",
         user="root",
         password="",
-        database="tutorlink",
+        database="rateschool",
         cursorclass=pymysql.cursors.DictCursor  # retorna resultados como dicionário
     )
