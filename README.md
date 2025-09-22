@@ -19,11 +19,7 @@ e segue os passos no terminal dentro do diretório do projeto:
 
 Para criar a base de dados usa os seguintes comandos no terminal do projecto
 
-1- flask db init
-
-2- flask db migrate -m "ALGUMA DESCRIÇÃO ex: primeira criação de tabelas"
-
-3-  flask db upgrade
+1-  flask db upgrade
 
 OBS: iniciar o projeto flask "flask run"
 
