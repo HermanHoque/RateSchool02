@@ -7,6 +7,8 @@ class Curso(CreateUpdate):
     id_curso = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(40), nullable=False)
 
+    turma = db.relationship('Turma', back_populates='curso')
+
     #definir relacionamento muitos para muitos
     disciplina = db.relationship(
         'Disciplina', 
