@@ -5,9 +5,9 @@ ola_bp = Blueprint('ola', __name__)
 
 @ola_bp.route('/')
 def index():
-    return render_template('index.html', title='Página Inicial')
+    return render_template('index.html', title='Home')
 
-@ola_bp.route('/ola')
+@ola_bp.route('/CriarConta')
 def ola_mundo():
     
-    return "Olá, Mundo!"
+    return render_template('criarConta.html', title='Criar Conta')
