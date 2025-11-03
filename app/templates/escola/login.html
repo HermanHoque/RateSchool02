@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %} Login Escola {% endblock %}
+
+{% block content %}
+
+<div class="h-screen flex items-center justify-center">
+<!-- Container principal com largura aumentada -->
+  <div class="w-full max-w-7xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+    
+    <!-- Lado Esquerdo -->
+    <div class="md:w-1/2 bg-yellow-400 flex flex-col items-center justify-center p-10 relative bg-cover bg-center"
+         style="background-image: url('/static/img/fundo-escola.jpg');">
+      <!-- Camada amarela semi-transparente sobre a imagem -->
+      <div class="absolute inset-0 bg-yellow-400 bg-opacity-90"></div>
+
+      <!-- Conteúdo central -->
+      <div class="relative z-10 text-center">
+        <img src="/static/img/logo.png" alt="RateSchool" class="mx-auto w-36 mb-5">
+        <h2 class="text-2xl text-white italic font-semibold">“Avaliar para evoluir”</h2>
+      </div>
+    </div>
+
+    <!-- Lado Direito -->
+    <div class="md:w-1/2 p-14 flex flex-col justify-center">
+      <h1 class="text-3xl font-bold mb-3">LOGIN</h1>
+      <p class="text-base italic mb-10 text-gray-600">
+        Bem-vindo!<br>Insira os seus dados para acessar o RateSchool.
+      </p>
+
+      <form action="" method="POST" class="space-y-8">
+        
+        <!-- Campo Email -->
+        <div>
+            <label for="email_instituicao" class="flex items-center text-sm font-medium text-gray-700 mb-1">
+                <i class="w-5 h-5 mr-2 text-custom-orange fa-solid fa-envelope"></i>
+                Email da Instituição
+            </label>
+            <input type="email" id="email_instituicao" name="email_instituicao" placeholder="Digite o seu email" required
+            class="w-full p-2 border border-gray-300 rounded-full focus:ring-custom-blue focus:border-custom-blue" />
+        </div>
+
+        <!-- Campo Palavra Pass -->
+        <div>
+            <label for="password" class="flex items-center text-sm font-medium text-gray-700 mb-1">
+                <i class="w-5 h-5 mr-2 text-custom-orange fa-solid fa-lock"></i>
+                Palavra Pass
+            </label>
+            <input type="password" id="password" name="password" placeholder="Digite a sua palavra pass" required
+            class="w-full p-2 border border-gray-300 rounded-full focus:ring-custom-blue focus:border-custom-blue" />
+        </div>
+
+        <!-- Botão -->
+        <button type="submit"
+                class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 rounded-full transition text-lg">
+          LOGIN
+        </button>
+      </form>
+
+      <!-- Link Esqueceu senha -->
+      <div class="mt-6 text-center">
+        <a href="#" class="text-sm font-semibold text-gray-700 hover:text-yellow-600 underline">
+          Esqueceu a senha?
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
