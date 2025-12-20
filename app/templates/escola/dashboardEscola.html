@@ -1,0 +1,148 @@
+{% extends "admin_base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+    <!-- CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+
+        <!-- CARD 1 -->
+        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-4">Adicionar professor</h3>
+
+            <i class="fa-solid fa-graduation-cap text-black text-6xl"></i>
+
+            <div class="flex items-center gap-2 mt-4 text-black">
+                <i class="fa-solid fa-database"></i>
+                <span>+35</span>
+            </div>
+
+            <button
+                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-4">Criar Turma</h3>
+
+            <i class="fa-solid fa-users text-black text-6xl"></i>
+
+            <div class="flex items-center gap-2 mt-4 text-black">
+                <i class="fa-solid fa-database"></i>
+                <span>+50</span>
+            </div>
+
+            <button
+                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
+            <h3 class="text-xl font-semibold mb-4">Formulário de avaliação</h3>
+
+            <i class="fa-solid fa-clipboard-list text-black text-6xl"></i>
+
+            <div class="flex items-center gap-2 mt-4 text-black">
+                <i class="fa-solid fa-database"></i>
+                <span>+10</span>
+            </div>
+
+            <button
+                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <h2 class="font-semibold text-lg mb-4">Avaliações</h2>
+    <!-- AVALIAÇÕES -->
+   <section class="bg-white border rounded-xl p-6 shadow">
+
+
+    <!-- FILTROS de avaliados -->
+    <div class="flex items-center justify-between mb-4 gap-4 flex-wrap">
+
+        <!-- Dropdown -->
+        <select
+            class="bg-white border border-black rounded-lg px-4 py-2 font-medium">
+            <option>Profs</option>
+        </select>
+
+        <!-- Pesquisa -->
+        <input type="text" placeholder="Pesquisar..."
+               class="bg-white border border-black rounded-lg px-4 py-2 w-64">
+    </div>
+
+      <!-- TABELA de AVALIAÇÕES -->
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse">
+
+                <thead>
+                    <tr class="border rounded-lg shadow p-6 text-left">
+                        <th class="p-3">Nº</th>
+                        <th class="p-3">Nome</th>
+                        <th class="p-3">Média geral</th>
+                        <th class="p-3">Nº Avaliações</th>
+                        <th class="p-3">Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="border-t">
+                        <td class="p-3">01</td>
+                        <td class="p-3 font-semibold">Herman Hoque</td>
+                        <td class="p-3">08/10</td>
+                        <td class="p-3">50</td>
+                        <td class="p-3 flex gap-3 text-xl">
+                            <i class="fa-regular fa-eye cursor-pointer"></i>
+                            <i class="fa-solid fa-print cursor-pointer"></i>
+                            <i class="fa-regular fa-trash-can cursor-pointer"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="border-t">
+                        <td class="p-3">02</td>
+                        <td class="p-3 font-semibold">Bernardo Hoque</td>
+                        <td class="p-3">08/10</td>
+                        <td class="p-3">60</td>
+                        <td class="p-3 flex gap-3 text-xl">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-print"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="border-t">
+                        <td class="p-3">02</td>
+                        <td class="p-3 font-semibold">Tchossi Hoque</td>
+                        <td class="p-3">08/10</td>
+                        <td class="p-3">60</td>
+                        <td class="p-3 flex gap-3 text-xl">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-print"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
+                    <!-- Continua conforme necessário -->
+                </tbody>
+
+            </table>
+        </div>
+
+
+    <!-- PAGINAÇÃO -->
+    <div class="flex justify-left gap-6 mt-4 text-xl">
+        <i class="fa-solid fa-chevron-left cursor-pointer"></i>
+        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+    </div>
+
+</section>
+
+{% endblock %}

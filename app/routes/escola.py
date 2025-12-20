@@ -12,4 +12,9 @@ def criarConta():
 @escola_bp.route('/loginEscola')
 def login():
 
-    return render_template('escola/login.html', title='Login Escola')
+    return render_template('escola/login.html', title='Login')
+
+@escola_bp.route('/dashboardEscola')
+def dashboardEscola():
+
+    return render_template('escola/dashboardEscola.html', title='Dashboard')
