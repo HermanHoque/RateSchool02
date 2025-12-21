@@ -8,57 +8,101 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
 
         <!-- CARD 1 -->
-        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
-            <h3 class="text-xl font-semibold mb-4">Adicionar professor</h3>
+        <div
+            class="group relative bg-[#6DAEDF] rounded-xl p-6 h-[190px]
+                shadow-md flex flex-col justify-between
+                transition-all duration-300 ease-out
+                hover:-translate-y-2 hover:shadow-2xl">
 
-            <i class="fa-solid fa-graduation-cap text-black text-6xl"></i>
+            <h3 class="text-white text-lg font-semibold">
+                Adicionar professor
+            </h3>
 
-            <div class="flex items-center gap-2 mt-4 text-black">
+            <!-- Ícone -->
+            <i
+                class="fa-solid fa-graduation-cap text-black text-6xl">
+            </i>
+
+            <!-- Contador -->
+            <div class="flex items-center gap-2 text-black text-sm">
                 <i class="fa-solid fa-database"></i>
                 <span>+35</span>
             </div>
 
+            <!-- Botão + -->
             <button
-                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
-                <i class="fa-solid fa-plus"></i>
+                class="absolute bottom-4 right-4 bg-white w-14 h-14 rounded-full
+                    flex items-center justify-center
+                    border-2 border-black shadow-md
+                    transition-all duration-300
+                    group-hover:bg-black group-hover:scale-110">
+                <i class="fa-solid fa-plus text-black text-xl group-hover:text-white"></i>
             </button>
         </div>
 
         <!-- CARD 2 -->
-        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
-            <h3 class="text-xl font-semibold mb-4">Criar Turma</h3>
+        <div
+            class="group relative bg-[#6DAEDF] rounded-xl p-6 h-[190px]
+                shadow-md flex flex-col justify-between
+                transition-all duration-300 ease-out
+                hover:-translate-y-2 hover:shadow-2xl">
 
-            <i class="fa-solid fa-users text-black text-6xl"></i>
+            <h3 class="text-white text-lg font-semibold">
+                Criar Turma
+            </h3>
 
-            <div class="flex items-center gap-2 mt-4 text-black">
+            <i
+                class="fa-solid fa-users text-black text-6xl">
+            </i>
+
+            <div class="flex items-center gap-2 text-black text-sm">
                 <i class="fa-solid fa-database"></i>
                 <span>+50</span>
             </div>
 
             <button
-                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
-                <i class="fa-solid fa-plus"></i>
+                class="absolute bottom-4 right-4 bg-white w-14 h-14 rounded-full
+                    flex items-center justify-center
+                    border-2 border-black shadow-md
+                    transition-all duration-300
+                    group-hover:bg-black group-hover:scale-110">
+                <i class="fa-solid fa-plus text-black text-xl group-hover:text-white"></i>
             </button>
         </div>
 
         <!-- CARD 3 -->
-        <div class="relative bg-[#6DAEDF] text-white rounded-xl p-6 shadow">
-            <h3 class="text-xl font-semibold mb-4">Formulário de avaliação</h3>
+        <div
+            class="group relative bg-[#6DAEDF] rounded-xl p-6 h-[190px]
+                shadow-md flex flex-col justify-between
+                transition-all duration-300 ease-out
+                hover:-translate-y-2 hover:shadow-2xl">
 
-            <i class="fa-solid fa-clipboard-list text-black text-6xl"></i>
+            <h3 class="text-white text-lg font-semibold">
+                Formulário de avaliação
+            </h3>
 
-            <div class="flex items-center gap-2 mt-4 text-black">
+            <i
+                class="fa-solid fa-clipboard-list text-black text-6xl">
+            </i>
+
+            <div class="flex items-center gap-2 text-black text-sm">
                 <i class="fa-solid fa-database"></i>
                 <span>+10</span>
             </div>
 
             <button
-                class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center shadow">
-                <i class="fa-solid fa-plus"></i>
+                class="absolute bottom-4 right-4 bg-white w-14 h-14 rounded-full
+                    flex items-center justify-center
+                    border-2 border-black shadow-md
+                    transition-all duration-300
+                    group-hover:bg-black group-hover:scale-110">
+                <i class="fa-solid fa-plus text-black text-xl group-hover:text-white"></i>
             </button>
         </div>
 
     </div>
+
+
 
     <h2 class="font-semibold text-lg mb-4">Avaliações</h2>
     <!-- AVALIAÇÕES -->
@@ -119,7 +163,7 @@
                     </tr>
 
                     <tr class="border-t">
-                        <td class="p-3">02</td>
+                        <td class="p-3">03</td>
                         <td class="p-3 font-semibold">Tchossi Hoque</td>
                         <td class="p-3">08/10</td>
                         <td class="p-3">60</td>
@@ -130,7 +174,18 @@
                         </td>
                     </tr>
 
-                    <!-- Continua conforme necessário -->
+                    <tr class="border-t">
+                        <td class="p-3">03</td>
+                        <td class="p-3 font-semibold">Tchossi Hoque</td>
+                        <td class="p-3">08/10</td>
+                        <td class="p-3">60</td>
+                        <td class="p-3 flex gap-3 text-xl">
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-print"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </td>
+                    </tr>
+
                 </tbody>
 
             </table>
