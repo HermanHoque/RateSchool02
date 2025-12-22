@@ -8,8 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="bg-[#7FB1DD] h-screen overflow-hidden flex">
@@ -29,7 +28,7 @@
 
         <!-- LOGO -->
         <div class="flex justify-center mb-6">
-            <img src="logo.png" alt="Rate School" class="w-20">
+            <img src="{{ url_for('static', filename='imgs/rateShoollogo.svg') }}" alt="Rate School" class="w-20">
         </div>
 
         <!-- LINHA -->
@@ -77,13 +76,17 @@
             <!-- Ano letivo -->
             <div class="flex items-center gap-3 border px-4 py-2 rounded-lg">
                 <i class="fa-regular fa-calendar text-black"></i>
-                <span class="font-semibold">2025/26</span>
+                <select name="ano_letivo" id="ano_letivo" class="bg-white">
+                    <option value="2025/26">2025/26</option>
+                    <option value="2026/27">2024/25</option>
+                    <option value="2027/28">2023/24</option>
+                </select>
             </div>
 
             <!-- Logout -->
-            <button class="text-black text-xl">
+            <a href="#" class="text-black text-xl">
                 <i class="fa-solid fa-right-from-bracket"></i>
-            </button>
+            </a>
         </div>
 
         <!-- LINHA FIXA -->

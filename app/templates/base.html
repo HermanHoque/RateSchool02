@@ -6,22 +6,12 @@
   <title>{% block title %}RateSchool{% endblock %}</title>
   <favicon href="{{ url_for('static', filename='imgs/rateShoollogo.svg') }}"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   
 
   <style>
-
-    /* Cores Customizadas (Reutilizando as cores do seu Navbar/Rodapé) */
-    .text-custom-blue {
-      color: #1a56db; 
-    }
-    .bg-custom-orange {
-      background-color: #f97316; 
-    }
-    .text-custom-orange {
-      color: #f97316; 
-    }
     
     /* Animação suave do menu mobile lateral */
     #mobile-menu {
@@ -39,7 +29,7 @@
       <!-- Lado Esquerdo (Logo + Home) -->
       <div class="flex items-center space-x-4">
         <img src="{{ url_for('static', filename='imgs/rateShoollogo.svg') }}" alt="RateSchool Logo" class="w-14 h-14">
-        <a href="#" class="border border-blue-500 text-blue-700 py-1.5 px-5 rounded-full text-sm font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
+        <a href="{{ url_for('index.index') }}" class="border border-[#0A66C2] text-[#0A66C2] py-1.5 px-5 rounded-full text-sm font-semibold hover:bg-[#0A66C2] hover:text-white transition duration-300">
           HOME
         </a>
       </div>
@@ -48,12 +38,12 @@
       <ul class="hidden md:flex items-center space-x-6 text-sm font-semibold text-blue-700">
         <li><a href="#" class="hover:underline">SOBRE NÓS</a></li>
         <li>
-          <a href="#" class="border border-blue-500 text-blue-700 bg-white py-1.5 px-5 rounded-full hover:bg-blue-600 hover:text-white transition duration-300">
+          <a href="{{ url_for('escola.login') }}" class="border border-[#0A66C2] text-[#0A66C2] bg-white py-1.5 px-5 rounded-full hover:bg-[#0A66C2] hover:text-white transition duration-300">
             LOGIN
           </a>
         </li>
         <li>
-          <a href="#" class="border border-yellow-500 bg-yellow-500 text-white py-1.5 px-5 rounded-full hover:bg-yellow-600 transition duration-300">
+          <a href="{{ url_for('escola.criarConta') }}" class="border border-[#F59E0B] bg-[#F59E0B] text-white py-1.5 px-5 rounded-full hover:bg-yellow-600 transition duration-300">
             CRIAR CONTA
           </a>
         </li>
@@ -99,9 +89,11 @@
   </main>
 
   <!-- Rodapé -->
-  <footer class="bg-yellow-300 py-8 mt-10">
+  <footer class="bg-[#F9CA79] py-8 mt-10">
     <div class="container mx-auto text-center text-gray-800">
-      <h2 class="text-blue-700 text-2xl italic font-semibold">RateSchool</h2>
+      <h2 class="text-[#0A66C2] text-2xl italic font-semibold">
+        <a href="{{ url_for('index.index') }}">RateSchool</a>
+      </h2>
 
       <div class="flex justify-center space-x-5 mt-3 text-gray-800 text-xl">
         <a href="#"><i class="fab fa-facebook"></i></a>
