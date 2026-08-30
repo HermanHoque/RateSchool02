@@ -1,7 +1,11 @@
-# RateSchool
+# Prototipo RateSchool
 
 ***APP feita com Python+Flask***
-Sistema para avalição geral e personalizada para instituições escolares
+O ReteSchool é um  Sistema de avaliação para instituições escolares em que 
+o foco é avaliar a qualidade da instituição que inclui todos os sector da instituição, onde
+os alunos avaliam as suas instituições.
+
+--------------------------
 
 Para rodar o projeto instale o python caso não tenha
 e segue os passos no terminal dentro do diretório do projeto:
